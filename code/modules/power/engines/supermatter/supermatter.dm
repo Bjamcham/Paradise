@@ -4,7 +4,7 @@
 
 //Zap constants, speeds up targeting
 
-#define COIL (ROD + 1)
+#define COIL (ROD + 2)
 #define ROD (LIVING + 1)
 #define LIVING (MACHINERY + 1)
 #define MACHINERY (OBJECT + 1)

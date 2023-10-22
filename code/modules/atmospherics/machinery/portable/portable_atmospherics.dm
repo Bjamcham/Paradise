@@ -75,7 +75,8 @@
 /obj/machinery/atmospherics/portable/disconnect()
 	if(!connected_port)
 		return
-
+	air_contents.merge(connected_port.air_contents)
+	connected_port.air_contents.remove(connected_port.air_contents.total_moles())
 	anchored = FALSE
 
 	connected_port.connected_device = null
